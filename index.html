@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTICKET</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="in-header">
+            <h1><a href="index.html">GIGTICKET</a></h1>
+            <nav>
+                <a href="#" id="klik" class="vrsta-dogadjaja">Vrsta događaja</a>
+                <ul id="izaberiDogadjaj" class="lista-dogadjaja">
+                    <li><a href="koncert.html">Koncerti</a></li>
+                    <li><a href="festival.html">Festivali</a></li>
+                    <li><a href="predstave.html">Pozoriste</a></li>
+                </ul>
+                <a href="tvoj_nalog">Tvoj nalog</a>
+                <a href="o_autoru">O autoru</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dodajDogadjaj" id="dodajDogadjaj">
+            <div class="in-section-dogadjaji">
+                <h2>Dodaj novi događaj</h2>
+                <form class="dogadjajForma" id="dogadjajForma">
+                    <div class="poljeForme">
+                        <label for="">Naziv događaja:</label>
+                        <input type="text" id="naziv" required>
+                    </div>
+            
+                    <div class="poljeForme">
+                        <label for="">Datum:</label>
+                        <input type="date" id="datum" required>
+                    </div>
+
+                    <div class="poljeForme">
+                        <label for="">Lokacija:</label>
+                        <input type="text" id="lokacija" required>
+                    </div>
+
+                    <div class="poljeForme">
+                        <label for="">Opis:</label>
+                        <textarea id="opis" rows="10"></textarea>
+                    </div>
+
+                    <div class="poljeForme">
+                        <label for="">Vrsta događaja:</label>
+                        <select id="tip" required>
+                            <option value="koncert">Koncert</option>
+                            <option value="festival">Festival</option>
+                            <option value="pozoriste">Pozoriste</option>
+                        </select>
+                    </div>
+
+                    <div class="poljeForme">
+                        <label for="">Grad:</label>
+                        <select id="tip" required>
+                            <option value="">Beograd</option>
+                            <option value="">Novi Sad</option>
+                            <option value="">Niš</option>
+                        </select>
+                    </div>
+
+                    <!-- <div class="poljeForme">
+                        <label for="">Slika događaja:</label>
+                        <input type="text" id="slika" placeholder="URL slike" required>
+                    </div> -->
+
+                    <div class="poljeForme">
+                        <button type="submit">Dodaj događaj</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+        <section id="dogadjaji" class="dogadjaji">
+          <h3>KONCERTI</h3>
+          <div id="koncert"></div>
+
+          <h3>FESTIVALI</h3>
+          <div id="festival"></div>
+
+          <h3>POZORISTE</h3>
+          <div id="pozoriste"></div>
+        </section>
+      </main>
+    
+      <footer>
+        <div class="in-footer">
+            <p>Copyright &copy; 2024 GIGTICKET | Mihailo Vlajkovic 206/19</p>
+        </div>
+      </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
