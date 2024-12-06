@@ -21,7 +21,7 @@ document.getElementById("dogadjajForma").addEventListener("submit", (e) => {
     const lokacija = document.getElementById("lokacija").value;
     const opis = document.getElementById("opis").value;
     const tip = document.getElementById("tip").value;
-    // const slika = document.getElementById("slika").value;
+    const slika = document.getElementById("slika").value;
 
     const noviDogadjaji = {naziv, datum, lokacija, opis, tip, slika};
 

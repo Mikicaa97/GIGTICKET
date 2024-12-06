@@ -197,7 +197,7 @@ button{
     gap: 30px;
 }
 
-#festival-sekcija{
+.festival-sekcija{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     justify-content: center;
@@ -233,4 +233,63 @@ footer{
     padding: 20px;
     text-align: center;
     color: #fff;
+}
+
+
+
+
+@media(max-width: 992px){
+    .in-section-dogadjaji{
+        width: 90%;
+        margin: 0px auto;
+    }
+    .poljeForme{
+        width: 80%;
+    }
+    #koncert{
+        grid-template-columns: 40% 40%;
+    }
+    #festival{
+        grid-template-columns: 40% 40%;
+    }
+    #pozoriste{
+        grid-template-columns: 40% 40%;
+    }
+
+    .festival-sekcija{
+        grid-template-columns: 40% 40%;
+    }
+
+    .koncert-all{
+        margin: 15px 0px;
+    }
+    .koncert-sekcija{
+        grid-template-columns: 40% 40%;
+    }
+}
+
+@media(max-width: 592px){
+    .in-header{
+        flex-direction: column;
+    }
+    .poljeForme{
+        width: 90%;
+    }
+    #koncert{
+        grid-template-columns: 90%;
+    }
+    #festival{
+        grid-template-columns: 90%;
+    }
+    #pozoriste{
+        grid-template-columns: 90%;
+    }
+
+    .festival-sekcija{
+        grid-template-columns: 90%;
+    }
+
+    .koncert-sekcija{
+        grid-template-columns: 90%;
+    }
 }
